@@ -30,15 +30,23 @@
           this.opt = {};
         }
         this.close_link = $(this.opt['close_link']);
+        this.open_link = $(this.opt['open_link']);
         this.link = this.close_link.attr('href');
       }
 
       Announcement.prototype.registerLink = function() {
         var _this = this;
-        return this.close_link.bind("ajax:success", function(data, response, status) {
+        this.close_link.bind("ajax:success", function(data, response, status) {
           $(this).parent().slideUp(280);
           return false;
         }).bind("ajax:error", function(data, xhr) {
+          return true;
+        });
+
+        this.open_link.on("click",function(){
+          if(typeof(_gaq_) !== 'undefined'){
+            _gaq.push(['_trackEvent','Announcement','show']);
+          }
           return true;
         });
       };
