@@ -7,39 +7,39 @@ Install with the asset pipeline (Rails 3.1+, asset pipeline enabled)
 
 Add this line to your application's Gemfile:
 
-	```ruby
-  gem 'hello_bar'
-  ```
+```ruby
+gem 'hello_bar'
+```
 
 Execute:
 
-	```sh
-  $ bundle
-  ```
+```sh
+$ bundle
+```
 
 Run the generator to create the migration:
 
-	```sh
-  rails generate hello_bar
-  ```
+```sh
+rails generate hello_bar
+```
 
 Add the default announcement CSS to `app/assets/stylesheets/application.css`:
 
-	```ruby
-  //= require announcements
-  ```
+```ruby
+//= require announcements
+```
 
 Add the helper to `app/views/layouts/application.html.erb`:
 
-	```ruby
-  <%= hello_bar %>
-  ```
+```ruby
+<%= hello_bar %>
+```
 
 Run the migration:
 
-	```sh
-  rake db:migrate
-  ```
+```sh
+rake db:migrate
+```
 
 ## Usage
 
