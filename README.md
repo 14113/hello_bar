@@ -17,7 +17,7 @@ Execute:
 $ bundle
 ```
 
-Run the generator to create the migration:
+Run the generator to create the migration and routes:
 
 ```sh
 rails generate hello_bar
