@@ -50,9 +50,9 @@ HelloBar provides...
     * link (string columns, mandtory) 
     * starts_at and ends_at (datetime columns, mandatory)
     You can use method "current" announcement.
-    * tracking into Google Analytics event
 
 * A helper called `#hello_bar`, which will return current announcement.
+* Tracking into Google Analytics event
 
 ## Contributing
 
