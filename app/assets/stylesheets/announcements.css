@@ -1,0 +1,25 @@
+.announcement {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  z-index: 10;
+  width: 100%;
+  background-color: #FFF9D7;
+  border-bottom: solid 1px #868686;
+  color: #00213F;
+  padding: 10px 0;
+  text-align: center;
+}
+.announcement a {
+    font-size: 12px;
+    margin-left: 5px;
+    color: #6E5910;
+    text-decoration: blink;
+}
+.announcement .close{
+    height: 25px;
+    width: 25px;
+    margin: -4px 10px 1px 0;
+    float: right;
+    background-image: url('/assets/close_small.png');
+}

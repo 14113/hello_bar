@@ -1,0 +1,19 @@
+<% Announcement.current(cookies.signed[:hidden_announcement_ids]).each do |announcement| %>
+  <%= div_for announcement do %>
+    <b>Latest:</b> 
+    <%= link_to announcement.message, show_announcement_path(announcement) unless announcement.link.blank? %>
+    <%= announcement.message if announcement.link.blank? %>
+    <%= link_to "", hide_announcement_path(announcement), data: {remote: true}, class: "close new-icons-close_small" %>
+  <% end %>
+<% end %>
+
+<%= javascript_include_tag 'util.announcements' %>
+<script type="text/javascript">
+	$(function() {
+    var announcement = new Util.Announcement({
+      close_link: ".announcement .close"
+    });
+    announcement.registerLink();
+  });
+</script>
+

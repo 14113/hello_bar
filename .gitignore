@@ -1,0 +1,8 @@
+*.swp
+.swo
+*~
+log/
+pkg
+rdoc
+gemfiles/*.lock
+*.gem
