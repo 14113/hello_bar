@@ -4,7 +4,7 @@ Announcement plugin to include 'hello bar' into your app, for Ruby on Rails. Bas
 
 ![](https://dl.dropbox.com/u/555540/hello_bar.png)
 
-You can show it a specific time, inform users about news on the web and measure all clicks.
+You can show message in a specific time, inform users about news on the web and measure all clicks.
 
 Install with the asset pipeline (Rails 3.1+, asset pipeline enabled)
 --------------------------------------------------------------------
