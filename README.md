@@ -2,6 +2,8 @@
 
 Announcement plugin to include 'hello bar' into your app, for Ruby on Rails. Based on paul_revere.
 
+![](http://cl.ly/image/27471c2o2V15)
+
 Install with the asset pipeline (Rails 3.1+, asset pipeline enabled)
 --------------------------------------------------------------------
 
